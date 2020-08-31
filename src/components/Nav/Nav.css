@@ -1,0 +1,12 @@
+.logo {
+    float: left;
+    color: antiquewhite;
+    margin-right: 90px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logo {
+      margin-right: 20px;
+      margin-left: -40px;
+    }
+  }
