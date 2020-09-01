@@ -12,7 +12,7 @@ const Layouts = () => {
             <Route path="/user" component={UserLayout} />
             <Route path="/other" component={OtherLayout} />
             <Route path="/error" component={ErrorLayout} />
-            <Route exact path="/" render={() => <Redirect to="/top"/>} />
+            <Route exact path="/" render={() => <Redirect to="/top/root"/>} />
             <Route render={() => <Redirect to="/error/404" />} />
         </Switch>
     );
