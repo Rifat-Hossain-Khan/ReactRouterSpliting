@@ -1,10 +1,11 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import B from "../container/B";
 import C from "../container/C";
 
 
 export default  [
-    <Route exact path="/b" component={B} key={1}/>,
-    <Route exact path="/c" component={C} key={2}/>
+    <Route exact path="/other/b" component={B} key={1}/>,
+    <Route exact path="/other/c" component={C} key={2}/>,
+    <Route exact path="/other"  key={3} render={() => <Redirect to="/other/b"/>}/>
 ];

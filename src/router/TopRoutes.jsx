@@ -4,6 +4,6 @@ import Root from '../container/Root';
 
 
 export default [
-    <Route exact path="/" key={1} render={() => <Redirect to="/root" />} />,
-    <Route exact path="/root" component={Root} key={2}/>
+    <Route exact path="/top/root" component={Root} key={1} />,
+    <Route exact path="/top" render={() => <Redirect to="/top/root" />} key={2} />
 ];
